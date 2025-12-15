@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class MarkerService {
-  private apiUrl = 'https://172.16.0.111:8443/api/markers/';
+  private apiUrl = '/api/markers/';
   private markersSubject = new BehaviorSubject<Marker[]>([]);
   markers$ = this.markersSubject.asObservable();
 
